@@ -103,6 +103,8 @@ p{
   font-size: clamp(1.1rem , 2vw , 1.5rem);
 }
 
+
+
 #view3 {
    margin-top: 8rem;
    padding: 4rem 1rem;
@@ -113,7 +115,6 @@ p{
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 0;
- 
   
 }
 h2{
@@ -159,10 +160,12 @@ span{
 }
 
 #v4Cont .box{
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border: 0.05rem solid rgb(66, 66, 66);
   padding : 1.5rem;
+  background: rgb(20, 20, 20);
 }
+
 #v4Cont .box img{
   max-width: 350px;
 }
@@ -178,11 +181,17 @@ span{
   color: black;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem;
 }
+
+#view5 h2{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 
 #explore-btn{
   padding: 1rem;
@@ -198,9 +207,14 @@ footer{
   padding: 2rem 1rem;
 }
 
+#socials{
+  padding: 1rem 0;
+}
+
 footer #socials i{
    font-size: 1.5rem;
    margin-right: 0.5rem;
+   color: rgb(180, 178, 178);
 }
 
 #footergrid{
@@ -217,7 +231,7 @@ footer #socials i{
 }
 a{
   text-decoration: none;
-  color: rgb(149, 148, 148);
+  color: rgb(180, 178, 178);
 }
 
 #footer-btm{
@@ -250,8 +264,42 @@ a{
   }
 }
 
+
+
 @media (min-width : 768px) {
+  #view4{
+    padding: 1rem;
+  }
+
+  #v4Cont{
+    flex-direction: row;
+  }
+  .smallbox{
+    padding-bottom: 2.2rem;
+  }
+
+  #view5{
+    background-image: url("./assets/v5_bg.svg");
+    background-position: center;
+    background-size: cover;
+  }
+    
       #footergrid{
         grid-template-columns: 1fr 1fr 1fr;
       }
+}
+
+@media (min-width:1024px) {
+  #view3 {
+    padding: 4rem 1rem;
+  }
+   #view3 .v3box{
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    /* border: 1px solid red; */
+   }
+   .v3box .text , .v3box .imgCont{
+    width: 50%;
+   }
 }
