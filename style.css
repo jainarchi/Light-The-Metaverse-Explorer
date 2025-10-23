@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background: black ;
+  color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+nav{
+  padding: 1rem;
+  background: gray;
+}
+
+#view2{
+  padding: 1rem;
+  width: 100%;
+  background-image: url("./assets/v2_circle.svg");
+  background-position: top;
+  background-size: cover;
+}
+
+.imgCont{
+  width: 100%;
+  /* border: 2px solid blue; */
+  position: relative;
+}
+
+.imgCont img{
+  width: 100%;
+  aspect-ratio: 1/auto;
+}
+
+.v2btm img{
+  max-width: 800px;
+}
+#upperimgv2{
+  position: absolute;
+  z-index: 9;
+}
+
+.v2btm{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 8rem;
+}
+
+.textCont{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: auto;
+   gap: 1rem;
+   max-width: 550px;
+
+}
+
+#view2 button{
+  padding: 0.3rem 0.7rem;
+  background: #000;
+  border: 0.05rem solid whitesmoke;
+  border-radius: 2rem;
+  width: fit-content;
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+
+h1{
+  font-size: clamp(2rem , 5vw , 4rem);
+  line-height: 1;
+}
+
+p{
+  color: rgb(147, 144, 144);
+  line-height: 1.4;
+  font-size: clamp(1.1rem , 2vw , 1.5rem);
+}
+
+#view3 {
+  margin-top: 8rem;
+   padding: 4rem 1rem;
+}
+
+.v3box{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+ 
+  
+}
+.v3box h2{
+  font-size: clamp(1.5rem , 4vw , 2rem);
+  margin: 0.5rem 0;
+ 
+}
+.v3box h3{
+  font-size:  0.9rem;
+  font-weight: 400;
+  color: rgb(138, 136, 136);
+}
+
+.v3box .text #v3grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.6rem;
+  padding: 2rem 0;
+}
+#v3grid h4{
+  font-weight: 600;
+  margin-bottom: 0.5rem ;
+  font-size: 1.1rem;
+}
