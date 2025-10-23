@@ -98,15 +98,17 @@ p{
  
   
 }
-.v3box h2{
+h2{
   font-size: clamp(1.5rem , 4vw , 2rem);
-  margin: 0.5rem 0;
+  margin: 1rem 0;
  
 }
-.v3box h3{
+
+span{
   font-size:  0.9rem;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(138, 136, 136);
+  text-transform: uppercase;
 }
 
 .v3box .text #v3grid{
@@ -120,4 +122,27 @@ p{
   font-weight: 600;
   margin-bottom: 0.5rem ;
   font-size: 1.1rem;
+}
+
+#view4{
+  padding: 1rem;
+}
+#v4Cont{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+#v4Cont h3{
+  margin: 0.7rem 0;
+}
+
+#v4Cont .box{
+  border-radius: 1.5rem;
+  border: 0.05rem solid rgb(66, 66, 66);
+  padding : 1.5rem;
+}
+
+#v4lastbox .box{
+  margin-bottom: 1rem;
 }
