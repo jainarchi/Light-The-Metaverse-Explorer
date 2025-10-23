@@ -16,9 +16,25 @@ main {
 
 }
 nav{
-  padding: 1rem;
+  padding: 0 1rem;
   background: gray;
 }
+
+
+#logo{
+  padding: 2rem 0;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+#v1-mid-img{
+  width: 6rem;
+}
+
+
 
 #view2{
   padding: 1rem;
@@ -106,8 +122,8 @@ h2{
 
 span{
   font-size:  0.9rem;
-  font-weight: 600;
-  color: rgb(138, 136, 136);
+  font-weight: 700;
+  color: rgb(104, 103, 103);
   text-transform: uppercase;
 }
 
@@ -142,7 +158,65 @@ span{
   border: 0.05rem solid rgb(66, 66, 66);
   padding : 1.5rem;
 }
+#v4Cont .box img{
+  max-width: 350px;
+}
 
 #v4lastbox .box{
   margin-bottom: 1rem;
+}
+
+#view5 {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#explore-btn{
+  padding: 1rem;
+  background: black;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  border: none;
+  
+}
+
+
+
+footer{
+  padding: 2rem 1rem;
+}
+
+footer #socials i{
+   font-size: 1.5rem;
+   margin-right: 0.5rem;
+}
+
+#footergrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+
+}
+#footergrid div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+a{
+  text-decoration: none;
+  color: rgb(178, 176, 176);
+}
+
+#footer-btm{
+  padding: 2rem 1rem;
+  border-top: 0.08rem solid rgb(79, 78, 78);
 }
