@@ -30,14 +30,12 @@ nav{
   font-weight: 300;
 }
 
-#v1-mid-img{
-  width: 6rem;
-}
 
 
 
 #view2{
   padding: 1rem;
+  padding-bottom: 10rem;
   width: 100%;
   background-image: url("./assets/v2_circle.svg");
   background-position: top;
@@ -46,7 +44,6 @@ nav{
 
 .imgCont{
   width: 100%;
-  /* border: 2px solid blue; */
   position: relative;
   text-align: center;
 }
@@ -54,7 +51,6 @@ nav{
 .imgCont img{
   width: 100%;
   aspect-ratio: 1/auto;
-  
 }
 
 .v2btm img{
@@ -91,6 +87,10 @@ nav{
   color: whitesmoke;
   font-size: 0.9rem;
 }
+button:hover{
+   box-shadow: 0px 0px 18px wheat;
+   cursor: pointer;
+}
 
 h1{
   font-size: clamp(2rem , 5vw , 4rem);
@@ -106,8 +106,8 @@ p{
 
 
 #view3 {
-   margin-top: 8rem;
-   padding: 4rem 1rem;
+   /* margin-top: 2rem; */
+   padding: 2rem 1rem;
 }
 
 .v3box{
@@ -118,13 +118,13 @@ p{
   
 }
 h2{
-  font-size: clamp(1.5rem , 6vw , 3rem);
+  font-size: clamp(1.5rem , 4vw , 3rem);
   margin: 1rem 0;
  
 }
 
 span{
-  font-size:  0.9rem;
+  font-size:1.1rem;
   font-weight: 700;
   color: rgb(104, 103, 103);
   text-transform: uppercase;
@@ -170,10 +170,15 @@ span{
   max-width: 350px;
 }
 
-#v4lastbox .box{
-  margin-bottom: 1rem;
+#v4lastbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
 }
-
+#v4lastbox .box{
+  height: 48%;
+}
 
 
 #view5 {
@@ -181,17 +186,16 @@ span{
   color: black;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2.5rem;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 8rem 2rem;
 }
 
-#view5 h2{
-    font-size: 2rem;
-    line-height: 1.2;
-  }
+#v1-mid-img{
+  width: 8rem;
+}
 
 #explore-btn{
   padding: 1rem;
@@ -202,6 +206,7 @@ span{
   border-radius: 4rem;
   border: none;
 }
+
 
 footer{
   padding: 2rem 1rem;
@@ -258,17 +263,15 @@ a{
   }
 }
 
-@media (min-width: 690px) {
-  #view3 {
-    padding: 4rem;
-  }
-}
-
 
 
 @media (min-width : 768px) {
+
+  span{
+    font-size: 1.3rem;
+  }
   #view4{
-    padding: 1rem;
+    padding: 4rem;
   }
 
   #v4Cont{
@@ -289,17 +292,35 @@ a{
       }
 }
 
-@media (min-width:1024px) {
+
+@media (min-width: 690px) {
   #view3 {
-    padding: 4rem 1rem;
+    padding: 4rem;
   }
+}
+
+@media (min-width:1024px) {
+
    #view3 .v3box{
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
-    /* border: 1px solid red; */
+    justify-content: space-between;
+    padding: 2rem;
    }
+
+   #view3 #v3box2{
+    flex-direction: row-reverse;
+   } 
+
    .v3box .text , .v3box .imgCont{
-    width: 50%;
+    width: 45%;
    }
+
+   .v3box .text p{
+    font-size: 1.3rem;
+   }
+
+  #view4{
+     padding:  3rem 6rem;
+  }
 }
