@@ -72,9 +72,10 @@ nav a {
   align-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 12vmax 1rem 16vmax  1rem;
+  padding: 6vmax 1rem 16vmax 1rem;
   position: relative;
   z-index: 99;
+  /* border: 2px solid red; */
 }
 
 #view1 #layer2 h1 {
