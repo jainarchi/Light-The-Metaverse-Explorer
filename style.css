@@ -170,7 +170,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 h2 {
   font-size: clamp(1.5rem, 4vw, 3rem);
@@ -197,6 +197,23 @@ span {
   font-size: 1.1rem;
 }
 
+#view3 img , #view2 .v2btm img {
+  transform: translateY(0);
+  animation: up-down 3.5s linear infinite;
+
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 #view4 {
   padding: 1rem;
 }
@@ -206,6 +223,7 @@ span {
   gap: 1rem;
   margin: 3rem 0;
 }
+
 #v4Cont h3 {
   margin: 0.7rem 0;
 }
@@ -215,6 +233,11 @@ span {
   border: 0.05rem solid rgb(66, 66, 66);
   padding: 1.5rem;
   background: rgb(20, 20, 20);
+  transition: box-shadow 0.3s ease;
+}
+
+#v4Cont .box:hover {
+  box-shadow: 0.2rem 0.2rem 1rem wheat;
 }
 
 #v4Cont .box img {
@@ -225,6 +248,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 #v4lastbox .box {
   height: 48%;
@@ -242,15 +266,6 @@ span {
   padding: 8rem 2rem;
 }
 
-#footer-logo {
-  padding: 2rem 0;
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: 300;
-}
-
 #v1-mid-img {
   width: 6.5rem;
 }
@@ -264,9 +279,21 @@ span {
   border-radius: 4rem;
   border: none;
 }
+#explore-btn:hover {
+  box-sizing: 0rem 0rem 0.5rem wheat;
+}
 
 footer {
   padding: 1rem;
+}
+
+#footer-logo {
+  padding: 2rem 0;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 #socials {
