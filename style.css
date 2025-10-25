@@ -72,7 +72,7 @@ nav a {
   align-items: center;
   text-align: center;
   gap: 2rem;
-  padding: 16vmax 1rem;
+  padding: 12vmax 1rem 16vmax  1rem;
   position: relative;
   z-index: 99;
 }
@@ -107,7 +107,7 @@ nav a {
 #view2 > img {
   width: 100%;
   position: absolute;
-  margin-top: -8%;
+  margin-top: -10%;
 }
 
 .v2btm {
