@@ -21,6 +21,14 @@ main {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+button:hover {
+  box-shadow: 0rem 0rem 1rem rgb(255, 189, 67);
+  cursor: pointer;
+}
+i{
+  cursor: pointer;
+}
+
 nav {
   width: 100%;
 }
@@ -65,6 +73,8 @@ nav a {
   text-align: center;
   gap: 2rem;
   padding: 16vmax 1rem;
+  position: relative;
+  z-index: 99;
 }
 
 #view1 #layer2 h1 {
@@ -75,7 +85,6 @@ nav a {
   font-size: 1.4rem;
   color: rgb(48, 48, 48);
   max-width: 70%;
-  z-index: 99;
 }
 
 #view1 #explore-btn {
@@ -146,11 +155,6 @@ nav a {
   color: whitesmoke;
   font-size: 0.9rem;
 }
-button:hover {
-  box-shadow: 0px 0px 18px wheat;
-  cursor: pointer;
-}
-
 h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1;
@@ -199,7 +203,7 @@ span {
 
 #view3 img , #view2 .v2btm img {
   transform: translateY(0);
-  animation: up-down 3.5s linear infinite;
+  animation: up-down 3s linear infinite;
 
 }
 @keyframes up-down {
@@ -235,10 +239,10 @@ span {
   background: rgb(20, 20, 20);
   transition: box-shadow 0.3s ease;
 }
-
 #v4Cont .box:hover {
   box-shadow: 0.2rem 0.2rem 1rem wheat;
 }
+
 
 #v4Cont .box img {
   max-width: 350px;
